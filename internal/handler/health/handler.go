@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/handler"
 	"github.com/pinedadaniel/logger-go/pkg/log"
-	"github.com/pinedadaniel/scaffolder-api-go/internal/handler"
 )
 
 type Handler struct {
@@ -20,7 +20,8 @@ func New(useCase UseCase) *Handler {
 
 func (h *Handler) Get(ctx *gin.Context) {
 
-	log.Info(ctx, "Request Init")
+	log.Info(ctx, "Init request with",
+		log.String("url", ctx.Request.URL.String()))
 	health, err := h.healthUseCase.Execute(ctx.Request.Context())
 	if err != nil {
 		log.Error(ctx, "Error HealthUseCase", log.Err(err))

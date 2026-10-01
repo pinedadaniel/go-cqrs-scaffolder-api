@@ -3,7 +3,7 @@ package health
 import (
 	"context"
 
-	"github.com/pinedadaniel/scaffolder-api-go/internal/core/domain"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/core/domain"
 )
 
 type Repository interface {

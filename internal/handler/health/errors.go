@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/pinedadaniel/scaffolder-api-go/internal/handler"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/handler"
 )
 
 const (

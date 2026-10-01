@@ -9,8 +9,7 @@ import (
 )
 
 const (
-	defaultConfigPath = "internal/config/profile/"
-	defaultScope      = "local"
+	defaultScope = "local"
 )
 
 type Reader func() ([]byte, error)

@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "scaffolder-api-go",
+    "name": "go-cqrs-scaffolder-api",
     "version": "v1.0.0"
   },
   "http": {

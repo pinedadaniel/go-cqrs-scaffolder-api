@@ -1,5 +1,4 @@
-module github.com/pinedadaniel/scaffolder-api-go
-
+module github.com/pinedadaniel/go-cqrs-scaffolder-api
 go 1.27.1
 
 require (

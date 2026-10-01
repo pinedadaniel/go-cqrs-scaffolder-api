@@ -3,7 +3,7 @@ package health
 import (
 	"context"
 
-	"github.com/pinedadaniel/scaffolder-api-go/internal/core/usecase/health"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/core/usecase/health"
 )
 
 type UseCase interface {

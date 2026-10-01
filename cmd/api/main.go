@@ -65,8 +65,6 @@ func run(ctx context.Context) error {
 	configPath := filepath.Join(rootDir, "internal", "config", "profile")
 	cmd.Env = append(os.Environ(), fmt.Sprintf("CONFIG_DIR=%s", configPath))
 
-	log.Info(ctx, configPath)
-
 	if err := cmd.Start(); err != nil {
 		return fmt.Errorf("could not start app: %w", err)
 	}

@@ -7,12 +7,12 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/config"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/core/usecase/health"
+	healthHandler "github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/handler/health"
+	healthRepository "github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/repository/health"
+	"github.com/pinedadaniel/go-cqrs-scaffolder-api/internal/routes/read"
 	"github.com/pinedadaniel/logger-go/pkg/log"
-	"github.com/pinedadaniel/scaffolder-api-go/internal/config"
-	"github.com/pinedadaniel/scaffolder-api-go/internal/core/usecase/health"
-	healthHandler "github.com/pinedadaniel/scaffolder-api-go/internal/handler/health"
-	healthRepository "github.com/pinedadaniel/scaffolder-api-go/internal/repository/health"
-	"github.com/pinedadaniel/scaffolder-api-go/internal/routes/read"
 )
 
 var (
