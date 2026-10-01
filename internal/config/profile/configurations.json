@@ -1,0 +1,21 @@
+{
+  "app": {
+    "name": "scaffolder-api-go",
+    "version": "v1.0.0"
+  },
+  "http": {
+    "port": "8080"
+  },
+  "log": {
+    "level": "debug",
+    "format": "json"
+  },
+  "swagger": {
+    "enabled": true
+  },
+  "example_api": {
+    "base_url": "https://api.example.com",
+    "timeout": 3000,
+    "circuit_breaker_ratio": 0.5
+  }
+}
